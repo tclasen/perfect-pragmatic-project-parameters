@@ -1,0 +1,17 @@
+[GLOBAL]
+pants_version = "2.0.0"
+pants_distdir_legacy_paths = false
+backend_packages.add = [
+  'pants.backend.python',
+  'pants.backend.python.lint.docformatter',
+  'pants.backend.python.lint.black',
+  'pants.backend.python.lint.flake8',
+  'pants.backend.python.lint.isort',
+  'pants.backend.python.typecheck.mypy',
+]
+
+[flake8]
+config = "src/python/.flake8"
+
+[mypy]
+config = "src/python/.mypy.ini"
