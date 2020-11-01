@@ -19,9 +19,6 @@ interpreter_constraints = [
 output = "all"
 use_coverage = true
 
-[coverage-py]
-config = 'src/python/.coveragerc'
-
 [flake8]
 config = 'src/python/.flake8'
 
